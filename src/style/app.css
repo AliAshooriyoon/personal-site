@@ -1,0 +1,191 @@
+:root {
+    font-size: 10px;
+    --cl-green: #34D399;
+    --cl-blue: #38BDF8;
+    --cl-orange: #F59E0B;
+    --cl-red: #F43F5E;
+    --bg-black: #111827;
+    --bg-white: #fff;
+    --bg-gray-light: #E1E1E6;
+    --bg-gray-light-medium: #C4C4CC;
+    --bg-gray-dark: #8D8D99;
+    --gradient1: linear-gradient(90deg, rgba(251,237,150,1) 5%, rgba(171,236,214,1) 56%);
+    --gradient2: linear-gradient(#FFF278, #F28D2F);
+    --gradient3: linear-gradient(#40C4FF, #189FFF);
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.header {
+    padding: 2rem 1rem;
+    margin-top: -2rem;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+=================================
+********* Header Logo *********
+=================================
+*/
+
+.header__logo{
+    cursor: pointer;
+}
+
+.header__title {
+    font-family: 'Nunito Bold', serif;
+    font-size: 2.5rem;
+    position: relative;
+    margin-left: 1rem;
+
+}
+
+.header__title:before {
+    content: ' ';
+    height: 3rem;
+    width: 0.3rem;
+    border-radius: 5rem;
+    background-color: var(--cl-orange);
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    right: 1rem;
+}
+
+.header__title:after {
+    content: ' ';
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 100%;
+    background-color: var(--cl-orange);
+    position: absolute;
+    left: -2rem;
+    top: 2rem;
+    right: 1rem;
+}
+
+
+/*
+=================================
+********* Header Button *********
+=================================
+*/
+
+.header__btn {
+    cursor: pointer;
+    width: 3rem;
+    height: 5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__btn-line {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--bg-black);
+    position: relative;
+    cursor: pointer;
+}
+
+.header__btn-line::before {
+    content: ' ';
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--bg-black);
+    position: absolute;
+    top: -1rem;
+    right: 0;
+}
+
+.header__btn-line::after {
+    content: ' ';
+    width: 1.3rem;
+    height: 0.3rem;
+    background-color: var(--bg-black);
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+/*
+=================================
+********* Header Mobile Menu *********
+=================================
+*/
+
+.popupMenu-Manager {
+    width: 25rem;
+    height: 50vh;
+    position: absolute;
+    left: -25rem;
+    top: 0;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background: linear-gradient(90deg, rgba(251,237,150,1) 0%, rgba(171,236,214,1) 79%);
+    transition: all 0.2s ease-in-out;
+}
+
+.mobile-menu {
+    font-family: "Poppins Medium", serif;
+    font-size: 2rem;
+    padding: 0;
+    list-style: none;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+.mobile-item{
+    cursor: pointer;
+}
+
+.show-mobile-menu{
+    left: 0;
+}
+/*
+=================================
+********* Header Desktop Menu *********
+=================================
+*/
+
+.menuManager {
+    display: none;
+    margin-right: 5rem;
+}
+
+.menu {
+    /*display: none;*/
+    font-family: "Poppins Medium", serif;
+    font-size: 2.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+}
+.item{cursor: pointer}
+.item-1 {
+    color: var(--cl-orange);
+}
+
+.item-2 {
+    color: var(--cl-blue);
+}
+
+.item-3 {
+    color: var(--cl-green);
+}

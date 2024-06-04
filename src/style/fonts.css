@@ -1,0 +1,16 @@
+@font-face {
+    src: url("../../fonts/Nunito/static/Nunito-SemiBold.ttf");
+    font-family: 'Nunito SemiBold';
+}
+@font-face {
+    src: url("../../fonts/Nunito/static/Nunito-Black.ttf");
+    font-family: 'Nunito Black';
+}
+@font-face {
+    src: url("../../fonts/Nunito/static/Nunito-Bold.ttf");
+    font-family: 'Nunito Bold';
+}
+@font-face {
+    src: url("../../fonts/poppins/Poppins-Medium.ttf");
+    font-family: 'Poppins Medium';
+}
