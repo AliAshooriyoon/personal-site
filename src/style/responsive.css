@@ -17,18 +17,20 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .popupMenu-Manager{
+    .popupMenu-Manager {
         display: none;
     }
-    .header__btn{
+
+    .header__btn {
         display: none;
     }
-    .menuManager{
+
+    .menuManager {
         display: block;
     }
 
 
-    .menu{
+    .menu {
         font-size: 2rem;
         gap: 4rem;
     }
@@ -37,20 +39,43 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-:root{
-    font-size: 12px;
-}
+    :root {
+        font-size: 12px;
+    }
 
-    .header{
+    .header {
         margin-top: -1rem;
     }
 
-    .menu{
+    .menu {
         font-size: 2.2rem;
         gap: 8rem;
+    }
+
+    .header-content__caption {
+        width: 70rem;
+        color: black;
+    }
+
+    .header-content__caption span {
+        color: #38BDF8;
+    }
+
+    .main-btn--normal {
+        font-size: 1.5rem;
+        width: 17rem;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
+    .header-content__caption {
+        width: 85rem;
+        color: black;
+    }
+
+    .header-content__title {
+        font-size: 2.7rem;
+        width: 50rem;
+    }
 }
