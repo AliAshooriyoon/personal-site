@@ -1,5 +1,6 @@
 :root {
     font-size: 10px;
+    box-sizing: border-box;
     --cl-green: #34D399;
     --cl-blue: #38BDF8;
     --cl-orange: #F59E0B;
@@ -16,6 +17,7 @@
 }
 
 body {
+    font-family: "Poppins Medium", serif;
     font-size: 1.6rem;
 }
 
@@ -28,6 +30,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+p {
+    margin: 0;
 }
 
 /*
@@ -127,12 +133,13 @@ body {
     width: 25rem;
     height: 50vh;
     position: absolute;
-    left: -25rem;
+    left: -27rem;
     top: 0;
     border-bottom-right-radius: 3rem;
     border-top-right-radius: 3rem;
-    background: linear-gradient(0deg, rgba(186, 56, 205, 1) 0%, rgba(52, 66, 52, 1) 49%, rgba(37, 161, 157, 1) 100%);
+    background-color: #656262;
     transition: all 0.2s ease-in-out;
+    /*border: 2px solid black;*/
 
 }
 
@@ -270,4 +277,181 @@ body {
     font-size: 1.2rem;
     height: 4rem;
     width: 12rem;
+}
+
+/*
+=================================
+    ********* Main *********
+=================================
+*/
+
+.main {
+    padding: 2rem 1rem;
+}
+
+.main-content__title {
+    margin-left: 2rem;
+    font-size: 5rem;
+    width: 20rem;
+    line-height: 4.5rem;
+    font-weight: normal;
+}
+
+.projectsBox {
+    overflow: auto;
+    display: flex;
+    /*margin: 0 auto;*/
+    justify-content: space-around;
+    align-items: center;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    flex-flow: column;
+}
+
+.projectsBox.active {
+    cursor: grabbing;
+    /*cursor: -webkit-grabbing;*/
+    transform: scale(1);
+}
+
+.project-content {
+    display: flex;
+    align-items: flex-start;
+    /*justify-content: space-around;*/
+    gap: 1rem;
+    flex-flow: column;
+    width: 32rem;
+    height: 53rem;
+}
+
+.project-content__title {
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.project-content__skills {
+    max-width: 32rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
+
+
+.project-content__skills::-webkit-scrollbar {
+    display: none;
+}
+
+.project-content__skills.active {
+    cursor: grabbing;
+    /*cursor: -webkit-grabbing;*/
+    transform: scale(1);
+}
+
+.project-content__skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cl-blue);
+    padding: 0.2rem 1.2rem;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    max-height: 100%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.project-content__skills .project-content__skill:last-child {
+    background-color: var(--cl-green);
+}
+
+.project-content__pictureBox {
+    width: 32rem;
+    height: 30rem;
+    background-color: #ED7854;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.project-content__image {
+    width: 98%;
+    height: 98%;
+}
+
+.project-content__contact {
+}
+
+.project-content__contactBox {
+    text-indent: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.project-content__contact-name {
+    display: inline;
+}
+
+.project-content__contact-logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+/*
+=================================
+    ********* About Me *********
+=================================
+*/
+
+.aboutMe {
+    padding: 1rem 2rem;
+}
+
+.aboutMe-content {
+}
+
+.aboutMe-content__titleBox {
+    font-size: 5.6rem;
+    max-width: 100%;
+    /*height: 30rem;*/
+    position: relative;
+}
+
+.aboutMe-content__background {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+}
+
+.aboutMe-content__title {
+    line-height: 5.5rem;
+    /*display: inline;*/
+}
+
+.aboutMe-content__pictureBox {
+}
+
+.aboutMe-content__captionBox {
+}
+
+.aboutMe-content__skillsBox {
+}
+
+.aboutMe-content__skillsTitle {
+}
+
+.aboutMe-content__skills {
 }

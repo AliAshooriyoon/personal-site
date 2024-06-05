@@ -1,4 +1,20 @@
 /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 365px) {
+    :root{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    :root{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    :root{
+        font-size: 7px;
+    }
+}
 @media only screen and (max-width: 600px) {
 
 }
@@ -12,7 +28,21 @@
         padding: 1rem 5rem;
         margin-top: 0;
     }
-
+    .main{
+        padding: 1rem 5rem;
+    }
+    .projectsBox{
+        flex-flow: row;
+        flex-wrap: wrap;
+        overflow: auto;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: flex-end; */
+        gap: 2rem 2rem;
+    }
+    .aboutMe{
+        padding: 1rem 5rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -49,7 +79,7 @@
 
     .menu {
         font-size: 2.2rem;
-        gap: 8rem;
+        gap: 4rem;
     }
 
     .header-content__caption {
@@ -65,10 +95,22 @@
         font-size: 1.5rem;
         width: 17rem;
     }
+    .projectsBox{
+        gap: 2rem 1.6rem;
+    }
+    .project-content{
+        width: 32rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1300px) {
+
+    .menu {
+        font-size: 2.2rem;
+        gap: 6rem;
+    }
+
     .header-content__caption {
         width: 85rem;
         color: black;
@@ -77,5 +119,12 @@
     .header-content__title {
         font-size: 2.7rem;
         width: 50rem;
+    }
+    .projectsBox{
+        gap: 2rem 2.6rem;
+        /*justify-content: center;*/
+    }
+    .project-content{
+        width: 33rem;
     }
 }
